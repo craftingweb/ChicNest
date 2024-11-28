@@ -16,6 +16,13 @@ a {
   display: inline-block;
 }
 
+button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
