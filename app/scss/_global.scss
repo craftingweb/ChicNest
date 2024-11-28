@@ -8,6 +8,12 @@ body {
   line-height: 27px;
   font-weight: 400;
   font-family: "Open Sans", sans-serif;
+  color: $default;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
 }
 
 .wrapper {
