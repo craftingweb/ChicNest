@@ -5,4 +5,9 @@ $(function () {
   $(".rightside-menu__close").on("click", function () {
     $(".rightside-menu").removeClass("rightside-menu__active");
   });
+  $(".top__slider").slick({
+    dots: true,
+    arrows: false,
+    fade: true,
+  });
 });
