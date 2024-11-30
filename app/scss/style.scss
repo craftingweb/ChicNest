@@ -394,3 +394,78 @@
     }
   }
 }
+
+.how {
+  padding: 80px 0 30px;
+  &__title {
+    text-align: center;
+    color: $title;
+    @extend %title-font;
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    line-height: 51px;
+    margin-bottom: 40px;
+  }
+  &__items-box {
+    display: flex;
+    border-bottom: 2px solid rgba(#363838, 0.7);
+    padding-bottom: 15px;
+    position: relative;
+    margin-bottom: 40px;
+    &::after {
+      content: "";
+      left: 0;
+      bottom: -5px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $title;
+      position: absolute;
+    }
+  }
+  &__item {
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    &--production {
+      margin-left: 317px;
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        height: 20px;
+        width: 1px;
+        background-color: $title;
+      }
+    }
+    &--consultation,
+    &--production {
+      padding-bottom: 30px;
+    }
+    &--detail {
+      margin-left: 300px;
+      &::after {
+        content: "";
+        position: absolute;
+        top: -40px;
+        left: 0;
+        height: 20px;
+        background-color: $title;
+        width: 1px;
+      }
+    }
+    &-title {
+      margin-left: 15px;
+      color: $title;
+      @extend %title-font;
+      font-size: 14px;
+    }
+    &-text {
+      margin-top: 12px;
+    }
+  }
+}
