@@ -560,17 +560,53 @@
   }
 }
 
-.about {
+.about__header {
   background-image: url("/images/about-bg.jpg");
   height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
-  &__title {
+  margin-top: -55px;
+  &-title {
     color: $title;
     @extend %title-font;
     font-size: 60px;
     font-style: normal;
     line-height: 80px;
+  }
+}
+
+.about {
+  &__title {
+    margin-top: 100px;
+    color: $title;
+    @extend %title-font;
+    font-size: 34px;
+    font-style: normal;
+    line-height: 60px;
+    max-width: 822px;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 200px;
+      height: 2px;
+      background-color: #707070;
+    }
+  }
+  &__text p {
+    padding-left: 285px;
+    padding-bottom: 40px;
+  }
+  &__video {
+    background-image: url("/images/video.jpg");
+    height: 414px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
