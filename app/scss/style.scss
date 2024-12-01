@@ -33,6 +33,10 @@
   &__link {
     @extend %title-font;
     color: #00000090;
+    &--active {
+      text-decoration: underline;
+      text-underline-offset: 6px;
+    }
   }
 }
 
@@ -228,6 +232,24 @@
   }
   &__active {
     transform: translateY(0);
+  }
+}
+
+.breadcrumbs {
+  background-color: rgba(#dfdfdf, 0.5);
+  padding: 13px 14px;
+  &__list {
+    display: flex;
+  }
+  &__item::after {
+    content: "/";
+  }
+  &__item:last-child::after {
+    display: none;
+  }
+  &__link {
+    font-size: 14px;
+    color: $default;
   }
 }
 
@@ -535,5 +557,20 @@
     font-style: normal;
     line-height: 38px;
     margin-top: 7px;
+  }
+}
+
+.about {
+  background-image: url("/images/about-bg.jpg");
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    color: $title;
+    @extend %title-font;
+    font-size: 60px;
+    font-style: normal;
+    line-height: 80px;
   }
 }
