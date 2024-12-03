@@ -528,6 +528,12 @@
     width: 100%;
     height: 100%;
   }
+  &.gallery-page {
+    .gallery__item:nth-child(8) {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+  }
 }
 
 .blog-box {
