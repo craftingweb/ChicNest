@@ -721,3 +721,81 @@
 .partners__collection {
   margin-bottom: 75px;
 }
+
+.contact {
+  margin: 100px 0;
+  &__title {
+    width: 300px;
+    padding-right: 80px;
+    color: $title;
+    @extend %title-font;
+    font-size: 34px;
+    font-style: normal;
+    line-height: 60px;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 200px;
+      height: 2px;
+      background-color: #707070;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 20px;
+  }
+  &__content {
+    margin-left: 300px;
+  }
+  &__text {
+    margin-bottom: 15px;
+    text-align: justify;
+  }
+  &__input {
+    width: 49%;
+    border-radius: 20px;
+    border: 1px solid #dfdfdf;
+    padding: 6px 0 6px 15px;
+    margin-bottom: 20px;
+    ::placeholder {
+      color: #a1a1a1;
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+    }
+  }
+  &__textarea {
+    width: 100%;
+    border-radius: 24px;
+    border: 1px solid #dfdfdf;
+    padding: 14px 0 3px 15px;
+    resize: none;
+  }
+  &__btn {
+    background-color: #363838;
+    color: #fff;
+    color: #fffff0;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    padding: 6px 70px;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+}
+
+.contact-slider {
+  margin-bottom: 50px;
+}
