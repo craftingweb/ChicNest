@@ -610,3 +610,108 @@
     align-items: center;
   }
 }
+
+.inspiration {
+  padding-top: 100px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("images/inspiration-bg.jpg");
+    height: 414px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 78px;
+  }
+  &__title {
+    color: $title;
+    @extend %title-font;
+    font-size: 34px;
+    font-style: normal;
+    line-height: 60px;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 200px;
+      height: 2px;
+      background-color: #707070;
+    }
+  }
+  &__text {
+    margin-bottom: 30px;
+  }
+  &__content {
+    max-width: 822px;
+  }
+  &__item {
+    color: $title;
+    @extend %title-font;
+    line-height: 23px;
+    margin-bottom: 33px;
+    position: relative;
+    &:nth-child(1):after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 80%;
+      height: 2px;
+      background-color: rgb(83, 241, 243);
+    }
+    &:nth-child(2):after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 70%;
+      height: 2px;
+      background-color: rgb(121, 202, 143);
+    }
+    &:nth-child(3):after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 75%;
+      height: 2px;
+      background-color: rgb(182, 243, 61);
+    }
+    &:nth-child(4):after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 40%;
+      height: 2px;
+      background-color: rgb(245, 150, 242);
+    }
+    &-content {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 14px;
+      border-bottom: 2px solid #768e9c;
+      border-radius: 4px;
+    }
+  }
+}
+
+.partners__items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.partners__collection {
+  margin-bottom: 75px;
+}
