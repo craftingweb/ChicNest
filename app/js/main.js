@@ -12,6 +12,15 @@ $(function () {
     fade: true,
   });
 
+  $(".article-slider__box").slick({
+    dots: true,
+    prevArrow:
+      '<button><img class="blog-arrow arrow-back" src="images/arrow-back.svg"></img></button>',
+    nextArrow:
+      '<button><img class="blog-arrow arrow-next" src="images/arrow-next.svg"></img></button>',
+    fade: true,
+  });
+
   $(".contact-slider").slick({
     slidesToShow: 10,
     slidesToScroll: 10,
