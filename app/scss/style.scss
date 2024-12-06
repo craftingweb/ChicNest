@@ -16,6 +16,9 @@
     background-color: transparent;
     padding: 0;
     cursor: pointer;
+    &-menu {
+      display: none;
+    }
   }
 }
 
@@ -1148,3 +1151,5 @@
   align-items: center;
   gap: 10px;
 }
+
+@import "media";

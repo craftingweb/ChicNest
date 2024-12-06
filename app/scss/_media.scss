@@ -1,0 +1,37 @@
+@media (max-width: 768px) {
+  .header__btn {
+    display: none;
+  }
+  .menu {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .logo {
+    margin: 0;
+  }
+  .menu__item {
+    & + .menu__item {
+    }
+  }
+}
+
+@media (max-width: 555px) {
+  .menu {
+    display: none;
+  }
+  .logo {
+    order: -1;
+  }
+  .header__btn-menu {
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    & span {
+      height: 1px;
+      width: 100%;
+      background-color: grey;
+    }
+  }
+}
