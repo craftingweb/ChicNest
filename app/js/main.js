@@ -5,6 +5,9 @@ $(function () {
   $(".rightside-menu__close").on("click", function () {
     $(".rightside-menu").removeClass("rightside-menu__active");
   });
+  $(".header__btn-menu").on("click", function () {
+    $(".menu").toggleClass("menu--open");
+  });
 
   $(".top__slider").slick({
     dots: true,

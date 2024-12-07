@@ -16,20 +16,48 @@
 }
 
 @media (max-width: 555px) {
+  .header {
+    &__inner {
+      flex-wrap: wrap;
+      padding-top: 42px;
+    }
+  }
   .menu {
-    display: none;
+    padding-right: 0;
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    z-index: 11;
+    text-align: center;
+    transform: translateY(-280px);
+    transition: all 0.7s;
+    &--open {
+      transform: translateY(30px);
+    }
+    &__list {
+      display: block;
+    }
+    &__item {
+      display: block;
+      padding: 15px 0;
+    }
   }
   .logo {
     order: -1;
+    position: relative;
+    z-index: 12;
   }
   .header__btn-menu {
+    position: relative;
+    z-index: 12;
+    order: -1;
     width: 30px;
     height: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     & span {
-      height: 1px;
+      height: 2px;
       width: 100%;
       background-color: grey;
     }
