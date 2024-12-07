@@ -1,4 +1,7 @@
 @media (max-width: 1200px) {
+  .collection {
+    grid-template-columns: repeat(3, 1fr);
+  }
   .top {
     &__slider-title {
       font-size: 62px;
@@ -39,6 +42,16 @@
 }
 
 @media (max-width: 768px) {
+  .decor {
+    display: none;
+  }
+  .collection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .new-collection__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
   .top {
     &__inner {
       padding-bottom: 20px;
@@ -89,6 +102,15 @@
 }
 
 @media (max-width: 555px) {
+  .collection {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .new-collection {
+    padding-bottom: 0;
+  }
+  .collection__img {
+    width: 100%;
+  }
   .header {
     &__inner {
       flex-wrap: wrap;
