@@ -338,11 +338,11 @@
 .collection {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 30px;
 }
 
 .collection__item {
   position: relative;
+  margin: 10px;
   &:hover .collection__info {
     opacity: 1;
     transition: 0.7s;
