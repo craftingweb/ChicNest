@@ -13,6 +13,12 @@
   }
 }
 @media (max-width: 1000px) {
+  .gallery {
+    padding: 25px 0 50px;
+  }
+  .gallery__btn {
+    margin: 12px 12px;
+  }
   .top {
     &__inner {
       &::after {
@@ -113,6 +119,23 @@
 }
 
 @media (max-width: 555px) {
+  .blog-box {
+    margin-bottom: 50px;
+  }
+  .blog-box__title {
+    font-size: 29px;
+    line-height: 40px;
+  }
+  .blog-box__item {
+    margin-bottom: 25px;
+  }
+  .blog-box__items {
+    display: block;
+  }
+  .gallery__items {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px 10px;
+  }
   .how__item--production::after,
   .how__items-box::after,
   .how__item--detail::after {
